@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator_Pro_Max</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div id="mainDiv">
+        <div id="displayDiv">
+            <input type="text" id="display">
+        </div>
+
+        <div id="acDiv">
+            <button id="acButton" onclick="soundAC()">AC</button>
+            <button id="delButton" onclick="soundDelButton()"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+        <div class="opSection">
+            <div id="numDiv">
+                <button id="num1" class="numButton" onclick="display.value += '9'; soundNumButton()">9</button>
+                <button id="num2" class="numButton" onclick="display.value += '8';soundNumButton()">8</button>
+                <button id="num3" class="numButton" onclick="display.value += '7';soundNumButton()">7</button>
+                <button id="num4" class="numButton" onclick="display.value += '6';soundNumButton()">6</button>
+                <button id="num5" class="numButton" onclick="display.value += '5';soundNumButton()">5</button>
+                <button id="num6" class="numButton" onclick="display.value += '4';soundNumButton()">4</button>
+                <button id="num7" class="numButton" onclick="display.value += '3';soundNumButton()">3</button>
+                <button id="num8" class="numButton" onclick="display.value += '2';soundNumButton()">2</button>
+                <button id="num9" class="numButton" onclick="display.value += '1';soundNumButton()">1</button>
+                <button id="numPoint" class="numButton" onclick="display.value += '.';soundNumButton()">.</button>
+                <button id="num10" class="numButton" onclick="display.value += '0';soundNumButton()">0</button>
+                <button id="op5" class="numButton" onclick="display.value = eval(display.value);soundNumButton()">=</button>
+            </div>
+            <div id="opDiv">
+                <button id="op1" class="numButton opButtons" onclick="display.value += '+';soundNumButton()">+</button>
+                <button id="op2" class="numButton opButtons" onclick="display.value += '-';soundNumButton()">-</button>
+                <button id="op3" class="numButton opButtons" onclick="display.value += '*';soundNumButton()">*</button>
+                <button id="op4" class="numButton opButtons" onclick="display.value += '/';soundNumButton()">/</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
